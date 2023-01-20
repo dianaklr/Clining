@@ -1,0 +1,328 @@
+/*Desktop Screen */
+.main{
+    width: 100%;
+    height: 1712px;
+    left: 0px;
+    background: rgba(171, 168, 218, 0.1);
+    /*padding-top: 120px;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#title{
+
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 42px;
+    display: flex;
+    text-transform: uppercase;
+    margin: 120px 0 0px 0px;
+    color: #6B5CDA;
+}
+
+#subtitle{
+    margin-top: 17px;
+    width: 937px;
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    /* or 28px */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #464646;
+}
+
+#mainText{
+    margin-top: 63px;
+    width: 1230px;
+    height: 465px;
+    border: 1px solid rgba(154, 105, 215, 0.3);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#mainText p{
+    margin: 40px;
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #464646;
+}
+
+
+.point a{
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 69px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    margin-bottom: 24px;
+    margin-right: 5px;
+    /* yellow */
+
+    color: #FEC901;
+}
+
+
+#pointText{
+
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 31px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+
+    color: #000000;
+}
+.point p{
+    width: 575px;
+    /*height: 216px;*/
+
+
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #464646;
+
+}
+
+#points-top{
+    display: flex;
+    align-items: center;
+    margin-top: 68px;
+}
+#points-bottom{
+    display: flex;
+    align-items: center;
+}
+#point-1{
+    padding: 0 40px 40px 0px;
+    border-right:  1px solid rgba(154, 105, 215, 0.3);
+    border-bottom:  1px solid rgba(154, 105, 215, 0.3);
+    height: 350px;
+}
+
+#point-2{
+    padding: 0 40px 40px 40px;
+    border-bottom:  1px solid rgba(154, 105, 215, 0.3);
+    height: 350px;
+}
+
+#point-3{
+    padding: 40px 40px 40px 0px;
+    height: 350px;
+}
+
+#point-4{
+    padding: 40px 40px 40px 40px;
+    border-left:  1px solid rgba(154, 105, 215, 0.3);
+    height: 350px;
+}
+
+body{
+    margin: 0;
+}
+
+/*Mobile Screen */
+
+@media screen and (max-width: 430px) {
+
+    .main{
+        height: 1000%;
+    }
+    #title{
+        font-size: 32px;
+
+    }
+    #subtitle{
+        margin: 17px 0 40px 0;
+        width: 80%;
+        font-size: 16px;
+
+    }
+
+    #mainText{
+        margin-top: 23px;
+        width: 90%;
+        height: 35%;
+        border: 1px solid rgba(154, 105, 215, 0.3);
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px;
+    }
+    #mainText img{
+        width: 90%;
+        border-radius: 30px;
+    }
+
+    #mainText p{
+        /*margin: 40px;*/
+        font-size: 15px;
+        width: 90%;
+    }
+
+    #points-top{
+        display: contents;
+
+    }
+    #points-bottom{
+        display: contents;
+    }
+
+
+    .point {
+        width: 100%;
+
+    }
+    #points{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+    .point p{
+        width: 95%;
+        font-size: 14px;
+
+
+    }
+
+    #point-1,  #point-2,  #point-3,  #point-4{
+        border-bottom:  1px solid rgba(154, 105, 215, 0.3);
+        padding: 5px 0 0 0 ;
+        height: 50%;
+        border-right:  none;
+        border-left:  none;
+
+    }
+    #pointText{
+        font-size: 18px;
+    }
+    .point a{
+        font-size: 50px;
+        margin-bottom: 10px;
+        margin-right: 5px;
+        /* yellow */
+
+        color: #FEC901;
+    }
+
+
+}
+
+/*Tablet Screen */
+
+@media screen and (min-width: 431px) and (max-width: 840px) {
+
+    .main {
+        height: 1000%;
+    }
+
+    #title {
+        font-size: 36px;
+    }
+
+    #subtitle {
+        margin: 17px 0 40px 0;
+        width: 80%;
+        font-size: 18px;
+    }
+
+    #mainText {
+        margin-top: 23px;
+        width: 90%;
+        height: 35%;
+        border: 1px solid rgba(154, 105, 215, 0.3);
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 30px 10px;
+    }
+
+    #mainText img {
+        width: 90%;
+        border-radius: 30px;
+    }
+
+    #mainText p {
+        /*margin: 40px;*/
+        font-size: 16px;
+        width: 90%;
+    }
+
+    #points-top {
+        display: contents;
+
+    }
+
+    #points-bottom {
+        display: contents;
+    }
+
+
+    .point {
+        width: 100%;
+
+    }
+
+    #points {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+
+    .point p {
+        width: 95%;
+        font-size: 15px;
+
+
+    }
+
+    #point-1, #point-2, #point-3, #point-4 {
+        border-bottom: 1px solid rgba(154, 105, 215, 0.3);
+        padding: 5px 0 0 0;
+        height: 50%;
+        border-right: none;
+        border-left: none;
+    }
+
+    #pointText {
+        font-size: 18px;
+    }
+
+    .point a {
+        font-size: 50px;
+        margin-bottom: 10px;
+        margin-right: 5px;
+        /* yellow */
+
+        color: #FEC901;
+    }
+}
+
